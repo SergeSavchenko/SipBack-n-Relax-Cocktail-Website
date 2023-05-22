@@ -1,0 +1,28 @@
+@import "../../../scss/mixins", "../../../scss/variables";
+
+.desktop-navigation {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+
+    &__link {
+      text-decoration: none;
+      color: $clr-white;
+      text-transform: capitalize;
+      padding-bottom: 5px;
+      border-bottom: 1px solid transparent;
+
+      &:hover,
+      &.active {
+        border-bottom: 1px solid $clr-white;
+      }
+    }
+
+    @include desktop {
+      gap: 50px;
+    }
+  }
+}

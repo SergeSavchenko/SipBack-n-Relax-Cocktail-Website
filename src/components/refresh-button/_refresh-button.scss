@@ -1,0 +1,23 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.refresh-btn {
+  border-radius: 20px;
+  height: 45px;
+  padding: 10px;
+  color: $clr-white;
+  background: #ff6000;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  width: 70%;
+  max-width: 225px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: #b34400;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.nav-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  width: $header-height;
+  height: $header-height;
+  background: transparent;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  z-index: 2;
+
+  &__is-open {
+    background-color: $clr-primary-dark;
+
+    .button {
+      transform: rotate(-180deg);
+      padding: 0;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  .button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+
+    .icon {
+      font-size: 1.8rem;
+      color: $clr-white;
+      transition: 0.2s ease-out;
+    }
+  }
+}

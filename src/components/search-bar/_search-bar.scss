@@ -1,0 +1,44 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.search-bar {
+  position: absolute;
+  top: $header-height;
+  width: 100%;
+  padding: 12px;
+  z-index: 2;
+
+  &__form {
+    display: flex;
+    height: 44px;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-indent: 8px;
+    border-radius: 8px 0px 0px 8px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    width: 50px;
+    border: none;
+    outline: none;
+    color: $clr-black;
+    background-color: $clr-white;
+    border-radius: 0px 8px 8px 0px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    width: 450px;
+    right: 0;
+    border-radius: 0px 0px 10px 10px;
+  }
+}

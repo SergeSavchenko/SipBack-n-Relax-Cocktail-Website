@@ -1,0 +1,14 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+
+body {
+  background-color: $clr-background;
+  font-family: "Fira sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

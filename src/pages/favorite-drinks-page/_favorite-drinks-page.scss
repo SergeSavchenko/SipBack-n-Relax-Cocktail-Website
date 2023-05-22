@@ -1,0 +1,15 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.favorite-drinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+}

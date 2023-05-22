@@ -1,0 +1,25 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.fetch-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__image {
+    width: 180px;
+    margin-bottom: 0.625rem;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+    color: $clr-danger;
+    margin-bottom: 0.625rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: $clr-black;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: $header-height;
+  width: 100%;
+  background-color: $clr-primary;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+
+  &__logo {
+    position: absolute;
+    left: 20px;
+    color: $clr-white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+}

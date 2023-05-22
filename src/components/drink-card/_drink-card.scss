@@ -1,0 +1,81 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.drink-card {
+  display: flex;
+  height: 95px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+
+  @include tablet {
+    flex-direction: column;
+    height: 100%;
+    background-color: $clr-white;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__image {
+    width: 95px;
+    height: auto;
+    border-radius: 10px 0px 0px 10px;
+
+    @include tablet {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  &__information {
+    position: relative;
+    background: $clr-white;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+    overflow: hidden;
+
+    @include tablet {
+      padding: 15px;
+      border-radius: 0px 0px 10px 10px
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $clr-dark;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+
+  &__category {
+    color: $clr-dark;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__type {
+    color: $clr-grey;
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  &__fav-icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 24px;
+    color: $clr-danger;
+  }
+}
